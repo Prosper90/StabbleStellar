@@ -17,6 +17,22 @@ export default function Hero() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-violet-950/30 rounded-full filter blur-3xl" />
       </div>
 
+      {/* Built on Stellar — top-left absolute badge */}
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6, delay: 0.5 }}
+        className="absolute top-[200px] left-4 sm:left-8 lg:left-12 z-20 hidden sm:block"
+      >
+        <Image
+          src="/Stabble_X_Stellar_logo.png"
+          alt="Built on Stellar"
+          width={200}
+          height={74}
+          className="rounded-xl shadow-2xl"
+        />
+      </motion.div>
+
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Status badge */}
         <motion.div
@@ -31,15 +47,14 @@ export default function Hero() {
           </span>
         </motion.div>
 
-        {/* Headline */}
+        {/* Headline — wider, no max-width constraint */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight"
+          className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-wider mb-6 leading-tight"
         >
-          Institutional-Grade
-          <br />
+          Institutional-Grade{" "}
           <span className="gradient-text">Stable Liquidity</span>
           <br />
           on Stellar
@@ -62,7 +77,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10"
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-20"
         >
           <Link
             href="/pool"
@@ -78,30 +93,11 @@ export default function Hero() {
           </a>
         </motion.div>
 
-        {/* Built on Stellar badge */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.38 }}
-          className="flex justify-center mb-14"
-        >
-          <div className="relative group cursor-pointer">
-            <div className="absolute -inset-1.5 bg-violet-600/25 rounded-3xl filter blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            <Image
-              src="/Stabble_X_Stellar_logo.jpg"
-              alt="Built on Stellar"
-              width={260}
-              height={96}
-              className="relative rounded-2xl shadow-xl hover:scale-105 transition-transform duration-300"
-            />
-          </div>
-        </motion.div>
-
         {/* Logo card */}
         <motion.div
           initial={{ opacity: 0, scale: 0.92 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.48 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
           className="flex justify-center"
         >
           <div className="relative inline-block">

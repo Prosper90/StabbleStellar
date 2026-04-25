@@ -28,7 +28,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center flex-shrink-0">
             <Image
-              src="/Stabble_X_Stellar_logo.jpg"
+              src="/Stabble_X_Stellar_logo.png"
               alt="Built on Stellar"
               width={130}
               height={48}

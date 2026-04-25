@@ -17,7 +17,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <Link href="/" className="flex-shrink-0">
             <Image
-              src="/Stabble_X_Stellar_logo.jpg"
+              src="/Stabble_X_Stellar_logo.png"
               alt="Built on Stellar"
               width={110}
               height={40}
