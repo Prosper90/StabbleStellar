@@ -25,7 +25,7 @@ export default function Hero() {
         className="absolute top-[200px] left-4 sm:left-8 lg:left-12 z-20 hidden sm:block"
       >
         <Image
-          src="/Stabble_X_Stellar_logo.png"
+          src="/Stabble_X_Stellar_built_on.png"
           alt="Built on Stellar"
           width={200}
           height={74}
@@ -67,8 +67,8 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          The most capital-efficient stablecoin AMM protocol — proven on Solana —
-          now integrated with Stellar&apos;s global payment infrastructure.
+          The most capital-efficient stablecoin AMM protocol — proven on Solana
+          — now integrated with Stellar&apos;s global payment infrastructure.
           Near-zero fees. 5-second finality.
         </motion.p>
 
@@ -121,7 +121,9 @@ export default function Hero() {
         transition={{ delay: 1.8 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
       >
-        <span className="text-gray-600 text-xs tracking-widest uppercase">Scroll</span>
+        <span className="text-gray-600 text-xs tracking-widest uppercase">
+          Scroll
+        </span>
         <div className="w-px h-8 bg-gradient-to-b from-gray-600 to-transparent" />
       </motion.div>
     </section>
