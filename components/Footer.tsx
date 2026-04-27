@@ -4,10 +4,10 @@ import Link from "next/link";
 const links = [
   { label: "Pools", href: "/pool" },
   { label: "Swap", href: "/pool" },
-  { label: "Docs", href: "#" },
-  { label: "GitHub", href: "#" },
-  { label: "Twitter", href: "#" },
-  { label: "Discord", href: "#" },
+  { label: "Docs", href: "https://github.com/Prosper90/StabbleStellar" },
+  { label: "GitHub", href: "https://github.com/Prosper90/StabbleStellar" },
+  { label: "Twitter", href: "https://x.com/stabbleorg?s=21" },
+  { label: "Discord", href: "https://discord.com/invite/SfkybtttdC" },
 ];
 
 export default function Footer() {
