@@ -21,7 +21,7 @@ const features = [
     icon: Coins,
     title: "Deep Stablecoin Liquidity",
     description:
-      "A single unified pool for USDC, USDT, and EURC maximises capital efficiency and minimises slippage.",
+      "A single unified pool for USDC, EURCV, and EURC maximises capital efficiency and minimises slippage.",
   },
   {
     icon: Shield,

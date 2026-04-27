@@ -17,7 +17,7 @@ const steps = [
     step: "02",
     title: "Select the Stable Pool",
     description:
-      "Browse the USDC · USDT · EURC stable pool and review real-time TVL, APY, and volume metrics.",
+      "Browse the USDC · EURCV · EURC stable pool and review real-time TVL, APY, and volume metrics.",
   },
   {
     icon: TrendingUp,

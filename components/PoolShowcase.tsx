@@ -4,24 +4,24 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { ArrowUpDown } from "lucide-react";
 
-const TOKENS = ["USDC", "USDT", "EURC"];
+const TOKENS = ["USDC", "EURCV", "EURC"];
 const TOKEN_COLOR: Record<string, string> = {
-  USDC: "bg-blue-500",
-  USDT: "bg-emerald-500",
-  EURC: "bg-violet-500",
+  USDC:  "bg-blue-500",
+  EURCV: "bg-amber-500",
+  EURC:  "bg-violet-500",
 };
 
 const POOL_COMPOSITION = [
-  { token: "USDC", pct: 42.3, color: "bg-blue-500" },
-  { token: "USDT", pct: 38.1, color: "bg-emerald-500" },
-  { token: "EURC", pct: 19.6, color: "bg-violet-500" },
+  { token: "USDC",  pct: 42.3, color: "bg-blue-500"  },
+  { token: "EURCV", pct: 38.1, color: "bg-amber-500" },
+  { token: "EURC",  pct: 19.6, color: "bg-violet-500"},
 ];
 
 export default function PoolShowcase() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [fromToken, setFromToken] = useState("USDC");
-  const [toToken, setToToken] = useState("USDT");
+  const [toToken, setToToken] = useState("EURCV");
   const [fromAmount, setFromAmount] = useState("1000");
 
   const toAmount =
@@ -39,7 +39,7 @@ export default function PoolShowcase() {
             The Stable Pool
           </h2>
           <p className="text-gray-400 max-w-lg mx-auto">
-            Deep liquidity for USDC, USDT, and EURC on Stellar — built on
+            Deep liquidity for USDC, EURCV, and EURC on Stellar — built on
             Stabble&apos;s battle-tested AMM with institutional-grade security.
           </p>
         </motion.div>
